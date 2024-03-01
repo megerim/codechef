@@ -18,17 +18,16 @@ const MOBILE_NAV_ITEMS: NavItem[] = [
 const MobileMenu: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Transition Variants
   const menuVariants = {
     open: {
       opacity: 1,
       y: 0,
-      transition: { type: 'spring', stiffness: 260, damping: 20 }
+      transition: { type: 'tween', stiffness: 260, damping: 20 }
     },
     closed: {
       opacity: 0,
       y: '-100%',
-      transition: { type: 'spring', stiffness: 260, damping: 20 }
+      transition: { stiffness: 260, damping: 20 }
     }
   };
 

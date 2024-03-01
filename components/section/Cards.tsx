@@ -4,6 +4,12 @@ import {EvervaultCardDemo} from '@/components/Vault';
 import {AnimatedPinDemo} from '@/components/Pincard';
 import Iletisim from '@/components/Iletisim';
 
+import { Caveat } from "next/font/google";
+
+
+const caveat = Caveat({ subsets: ["latin"] });
+
+
   export default function Cards() {
     return (
       <>
@@ -14,7 +20,7 @@ import Iletisim from '@/components/Iletisim';
             <ThreeDCardDemo />
           </div>
           <div className='md:basis-1/2 w-full text-end md:text-end md:pr-5'>
-            <h1 className='bg-gradient-to-br from-gray-100 to-gray-300 py-4 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl'>FARKLI</h1>
+            <h1 className={`bg-gradient-to-br from-gray-100 to-gray-300 py-4 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl ${caveat.className}`}>Farklı</h1>
             <p className='text-white font-light'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quibusdam...
@@ -28,7 +34,7 @@ import Iletisim from '@/components/Iletisim';
             <EvervaultCardDemo />
           </div>
           <div className='md:basis-1/2 w-full'>
-            <h1 className='bg-gradient-to-br from-gray-100 to-gray-300 py-4 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl'>GÜVENLİ</h1>
+            <h1 className={`bg-gradient-to-br from-gray-100 to-gray-300 py-4 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl ${caveat.className}`}>Güvenli</h1>
             <p className='text-white font-light'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quibusdam...
@@ -42,7 +48,7 @@ import Iletisim from '@/components/Iletisim';
             <AnimatedPinDemo />
           </div>
           <div className='md:basis-1/2 w-full text-end'>
-            <h1 className='bg-gradient-to-br from-gray-100 to-gray-300 py-4 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl'>TAM</h1>
+            <h1 className={`bg-gradient-to-br from-gray-100 to-gray-300 py-4 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl ${caveat.className}`}>Tam</h1>
             <p className='text-white font-light'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quibusdam...
