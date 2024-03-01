@@ -43,7 +43,7 @@ const caveat = Caveat({ subsets: ["latin"] });
         </div>
     
         {/* Third Row: Card - Text */}
-        <div className='flex flex-col md:flex-row items-center justify-center gap-4'>
+        {/* <div className='flex flex-col md:flex-row items-center justify-center gap-4'>
           <div className='md:basis-1/2 w-full'>
             <AnimatedPinDemo />
           </div>
@@ -54,7 +54,7 @@ const caveat = Caveat({ subsets: ["latin"] });
               quibusdam...
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className='relative m-12 p-12'>
         <Iletisim/>

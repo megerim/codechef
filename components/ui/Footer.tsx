@@ -4,7 +4,6 @@ export default function Footer() {
       { title: 'Ana Sayfa', url: '#' },
       { title: 'Çalışmalarımız', url: '#' },
       { title: 'Hakkımızda', url: '#' },
-      { title: 'İletişim', url: '#' },
     ];
   
     return (
