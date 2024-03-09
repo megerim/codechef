@@ -1,106 +1,26 @@
-"use client";
-import React from "react";
-import { HeroParallax } from "./ui/HeroP";
+import HeroCarousel from "./Carousel";
 
-export function HeroParallaxDemo() {
+
+
+export default function Hero() {
   return (
-    <div className="bg-gradient-to-b from-gray-800 to-black">
-      <HeroParallax products={products} />
+    <>
+    <div className="bg-gradient-to-b min-h-screen flex from-gray-800 to-black">
+      <div className="max-w-7xl relative mx-auto my-20 md:my-40 px-4 w-full  left-0 top-0 text-white z-50">
+        <h1 className="text-3xl md:text-9xl font-extrabold tracking-[-.15rem] md:tracking-[-.8rem] ">
+          codechef.
+        </h1>
+        <p className="max-w-2xl text-base md:text-lg mt-8">
+          Dijital Çözüm Partneriniz
+        </p>
+        
+      </div>
+      
+      <div className="max-w-96 md:max-h-[600px] md:min-w-[600px] flex m-12 md:mr-36 rounded-md">
+      <HeroCarousel />
     </div>
+    </div>
+    
+    </>
   );
 }
-export const products = [
-  {
-    title: "Güllü Gıda",
-    link: "https://gullugida.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Gullu1.webp",
-  },
-  {
-    title: "Kor Makine",
-    link: "https://kormakine.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Kor1.webp",
-  },
-  {
-    title: "Eti Metal",
-    link: "https://etimetal.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/eti1.webp",
-  },
-
-  {
-    title: "Digital Plus",
-    link: "https://digitalplus.net.tr",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Digital1.webp",
-  },
-  {
-    title: "Güllü Gıda",
-    link: "https://gullugida.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Gullu1.webp",
-  },
-  {
-    title: "Kor Makine",
-    link: "https://kormakine.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Kor1.webp",
-  },
-  {
-    title: "Eti Metal",
-    link: "https://etimetal.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/eti1.webp",
-  },
-
-  {
-    title: "Digital Plus",
-    link: "https://digitalplus.net.tr",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Digital1.webp",
-  },
-  {
-    title: "Güllü Gıda",
-    link: "https://gullugida.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Gullu1.webp",
-  },
-  {
-    title: "Kor Makine",
-    link: "https://kormakine.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Kor1.webp",
-  },
-  {
-    title: "Eti Metal",
-    link: "https://etimetal.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/eti1.webp",
-  },
-
-  {
-    title: "Digital Plus",
-    link: "https://digitalplus.net.tr",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Digital1.webp",
-  },{
-    title: "Güllü Gıda",
-    link: "https://gullugida.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Gullu1.webp",
-  },
-  {
-    title: "Kor Makine",
-    link: "https://kormakine.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/Kor1.webp",
-  },
-  {
-    title: "Eti Metal",
-    link: "https://etimetal.com",
-    thumbnail:
-      "https://barkinali.com/6419e69399a9b63892400fac/eti1.webp",
-  }
-  
-];

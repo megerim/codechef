@@ -1,9 +1,10 @@
 // Footer.js or Footer.tsx
 export default function Footer() {
     const footerLinks = [
-      { title: 'Ana Sayfa', url: '#' },
-      { title: 'Çalışmalarımız', url: '#' },
-      { title: 'Hakkımızda', url: '#' },
+      { title: 'Ana Sayfa', url: '/' },
+      { title: 'Çalışmalarımız', url: '/works' },
+      { title: 'Hakkımızda', url: '/about' },
+      { title: 'İletişim', url: '/#contact' },
     ];
   
     return (
@@ -142,7 +143,7 @@ export default function Footer() {
         </ul>
 
         <div className="flex justify-center">
-            <p className="text-black text-xs font-light tracking-widest pt-3">&copy; 2024 | CodeChef.</p>
+            <p className="text-black text-xs font-light tracking-widest pt-3">&copy; 2024</p>
           </div>
         </div>
       </footer>

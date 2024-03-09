@@ -1,18 +1,15 @@
 import React from 'react';
-import { HeroParallaxDemo } from '@/components/Hero';
-import NavbarDemo from '@/components/Navbar';
-import Footer from '@/components/ui/Footer';
-import {LampDemo} from '@/components/Kapi';
+import MobileMenu from '@/components/MobileMenu';
+import Footer from '@/components/section/Footer';
+import {Intro} from '@/components/section/intro'
 
 import Cards from "@/components/section/Cards";
 
 export default function Home() {
   return (
     <>
-      <NavbarDemo/>
-      <HeroParallaxDemo />
-      
-      <LampDemo />
+      <MobileMenu/>
+      <Intro />
       <div className="bg-gradient-to-b from-black to-gray-800">
       <Cards />
       </div>
