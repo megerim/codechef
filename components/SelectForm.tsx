@@ -49,7 +49,7 @@ export default function SelectForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-6 md:flex-row md:items-end md:space-x-4 md:space-y-0 bg-black/75 border-2 border-gray-600 drop-shadow-2xl py-5 px-12  rounded-md">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-6 md:flex-row md:items-end md:space-x-4 md:space-y-0 bg-black/75 border-2 xl:mt-40 border-gray-600 drop-shadow-2xl py-5 px-12  rounded-md">
         <FormField
           control={form.control}
           name="hizmet"

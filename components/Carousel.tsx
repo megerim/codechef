@@ -11,10 +11,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const CarouselImages = [
   "/1.png" ,
-  "https://picsum.photos/id/12/600/400",
-  "https://picsum.photos/id/13/600/400",
-  "https://picsum.photos/id/14/600/400",
-  "https://picsum.photos/id/15/600/400",
+  "/2.png",
+  "/3.png",
+  "/4.png",
+
 ];
 
 export default function HeroCarousel() {
