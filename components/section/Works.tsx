@@ -4,7 +4,7 @@ import MobileMenu from '@/components/MobileMenu';
 
 export default function WorksSection() {
     return (
-      <div className="w-full py-24 bg-gradient-to-b from-black to-gray-800 text-white">
+      <div className="w-full py-24 bg-black text-white">
         <section className="w-full py-5">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
@@ -16,7 +16,7 @@ export default function WorksSection() {
           </div>
         </section>
         <section className="w-full py-5">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+          <div className="container grid items-center gap-4 px-4 text-center md:px-0 lg:gap-10">
             <div className="grid w-full grid-cols-1 items-stretch justify-center md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex flex-col items-center justify-center p-4 sm:p-8">
                 <div className="aspect-video overflow-hidden rounded-xl w-full max-w-sm">
@@ -24,7 +24,7 @@ export default function WorksSection() {
                     alt="Project"
                     className="rounded-lg object-cover object-center"
                     height="225"
-                    src="/placeholder.svg"
+                    src="/project-3.png"
                     style={{
                       aspectRatio: "400/225",
                       objectFit: "cover",
@@ -32,8 +32,8 @@ export default function WorksSection() {
                     width="400"
                   />
                 </div>
-                <h3 className="text-xl font-bold mt-4">Acme Inc</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Dynamic & responsive</p>
+                <h3 className="text-xl font-bold mt-4">Kor Makine</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">İşletme</p>
               </div>
               <div className="flex flex-col items-center justify-center p-4 sm:p-8">
                 <div className="aspect-video overflow-hidden rounded-xl w-full max-w-sm">
@@ -41,7 +41,7 @@ export default function WorksSection() {
                     alt="Project"
                     className="rounded-lg object-cover object-center"
                     height="225"
-                    src="/placeholder.svg"
+                    src="/project-1.png"
                     style={{
                       aspectRatio: "400/225",
                       objectFit: "cover",
@@ -49,8 +49,8 @@ export default function WorksSection() {
                     width="400"
                   />
                 </div>
-                <h3 className="text-xl font-bold mt-4">Bolt Logistics</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Sleek & modern</p>
+                <h3 className="text-xl font-bold mt-4">Barkinali</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Kişisel Portfolyo</p>
               </div>
               <div className="flex flex-col items-center justify-center p-4 sm:p-8">
                 <div className="aspect-video overflow-hidden rounded-xl w-full max-w-sm">
@@ -58,7 +58,7 @@ export default function WorksSection() {
                     alt="Project"
                     className="rounded-lg object-cover object-center"
                     height="225"
-                    src="/placeholder.svg"
+                    src="/project-2.png"
                     style={{
                       aspectRatio: "400/225",
                       objectFit: "cover",
@@ -66,8 +66,8 @@ export default function WorksSection() {
                     width="400"
                   />
                 </div>
-                <h3 className="text-xl font-bold mt-4">Cafe Noir</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Elegant & sophisticated</p>
+                <h3 className="text-xl font-bold mt-4">Güllü Gıda</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">E-ticaret</p>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function WorksSection() {
                   alt="Image"
                   className="object-cover object-center"
                   height="600"
-                  src="/placeholder.svg"
+                  src="/Gin Tonic.jpg"
                   style={{
                     aspectRatio: "600/600",
                     objectFit: "cover",
@@ -103,7 +103,7 @@ export default function WorksSection() {
                   alt="Image"
                   className="object-cover object-center"
                   height="600"
-                  src="/placeholder.svg"
+                  src="/Shoe.jpg"
                   style={{
                     aspectRatio: "600/600",
                     objectFit: "cover",
@@ -116,7 +116,7 @@ export default function WorksSection() {
                   alt="Image"
                   className="object-cover object-center"
                   height="600"
-                  src="/placeholder.svg"
+                  src="/Smoothie-Frappe.jpg"
                   style={{
                     aspectRatio: "600/600",
                     objectFit: "cover",
@@ -129,7 +129,7 @@ export default function WorksSection() {
                   alt="Image"
                   className="object-cover object-center"
                   height="600"
-                  src="/placeholder.svg"
+                  src="/Muub's Giyim MockUp.png"
                   style={{
                     aspectRatio: "600/600",
                     objectFit: "cover",

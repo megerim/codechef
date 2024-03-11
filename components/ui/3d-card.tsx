@@ -52,7 +52,7 @@ export const CardContainer = ({
           containerClassName
         )}
         style={{
-          perspective: "1000px",
+          perspective: "400px",
         }}
       >
         <div
