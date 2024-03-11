@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <MobileMenu/>
       <Intro />
-      <div className="bg-black">
+      <div className="w-full bg-black">
       <Cards />
       </div>
       <Footer />

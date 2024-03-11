@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -32,6 +30,7 @@ export default function HeroCarousel() {
         plugins={[
           Autoplay({
             delay: 2000,
+            stopOnInteraction: false,
           }),
         ]}
       >
@@ -39,14 +38,14 @@ export default function HeroCarousel() {
           {CarouselImages.map((imageUrl, index) => (
             <CarouselItem key={index} className="pt-1 md:basis-1/2">
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex items-center justify-center p-1 ">
+                <Card className='bg-transparent border-none'>
+                  <CardContent className="flex items-center justify-center p-1">
                     <Image 
                       src={imageUrl} 
                       alt={`Slide ${index + 1}`} 
                       width={600} 
                       height={400}
-                      className='rounded-md bg-transparent'
+                      className='rounded-md'
                     />
                   </CardContent>
                 </Card>

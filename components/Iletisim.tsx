@@ -17,8 +17,8 @@ export default function Iletisim() {
   return (
     <>
       <Drawer>
-        <DrawerTrigger className="py-12 px-24 bg-orange-400 rounded-sm hover:text-white hover:bg-orange-600 transition duration-300 ">
-          <p id="contact" className="font-bold text-2xl">İletişim İçin Tıklayınız</p>
+        <DrawerTrigger className="py-8 px-12 bg-orange-400 rounded-sm hover:text-white hover:bg-orange-600 transition duration-300 ">
+          <p id="contact" className="font-bold text-xl">İletişim İçin Tıklayınız</p>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>

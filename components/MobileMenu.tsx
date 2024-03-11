@@ -54,7 +54,7 @@ const MobileMenu: FC = () => {
   };
 
   return (
-    <div className="fixed top-0 right-0 md:p-10 z-50">
+    <div className="fixed top-0 right-0 z-50">
       <Button variant={"ghost"} className="text-white p-4 mt-5 mr-5 md:text-xl" onClick={() => setIsOpen(true)}>
         <MenuIcon className="h-8 w-8" />
       </Button>
