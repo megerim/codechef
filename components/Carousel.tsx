@@ -12,7 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
 
 const CarouselImages = [
-  "https://picsum.photos/id/11/600/400",
+  "/1.png" ,
   "https://picsum.photos/id/12/600/400",
   "https://picsum.photos/id/13/600/400",
   "https://picsum.photos/id/14/600/400",
@@ -22,7 +22,7 @@ const CarouselImages = [
 export default function HeroCarousel() {
   return (
     <>
-      <Carousel
+      <Carousel 
         opts={{
           align: "start",
           loop: true, 
@@ -40,13 +40,13 @@ export default function HeroCarousel() {
             <CarouselItem key={index} className="pt-1 md:basis-1/2">
               <div className="p-1">
                 <Card>
-                  <CardContent className="flex items-center justify-center p-1">
+                  <CardContent className="flex items-center justify-center p-1 ">
                     <Image 
                       src={imageUrl} 
                       alt={`Slide ${index + 1}`} 
                       width={600} 
                       height={400}
-                      className='rounded-md'
+                      className='rounded-md bg-transparent'
                     />
                   </CardContent>
                 </Card>
@@ -54,8 +54,7 @@ export default function HeroCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+    
       </Carousel>
     </>
   );
