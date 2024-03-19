@@ -17,7 +17,7 @@ export default function Iletisim() {
   return (
     <>
       <Drawer>
-        <DrawerTrigger className="py-8 px-12 bg-orange-400 rounded-sm hover:text-white hover:bg-orange-600 transition duration-300 ">
+        <DrawerTrigger className="py-8 px-12 bg-orange-400 rounded-sm hover:text-white hover:bg-opacity-0 transition duration-300 border shadow-[32px_32px_16px_rgb(0_0_0/1)]  border-black/[0] shadow-black">
           <p id="contact" className="font-bold text-xl">İletişim İçin Tıklayınız</p>
         </DrawerTrigger>
         <DrawerContent>
@@ -31,7 +31,7 @@ export default function Iletisim() {
           </DrawerHeader>
           <DrawerFooter>
             <DrawerClose asChild>
-              <Button variant="outline" className="flex px-36 mx-auto">
+              <Button variant="outline" className="flex px-36 w-50 mx-auto bg-white text-black hover:bg-orange-400 border-none">
                 Kapat
               </Button>
             </DrawerClose>

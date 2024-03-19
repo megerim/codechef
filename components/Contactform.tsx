@@ -38,16 +38,16 @@ export default function ContactForm() {
   };
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 text-left">
+    <Form {...form} >
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 text-left  ">
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>İsim</FormLabel>
+              <FormLabel className="text-white">İsim</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input className="text-white" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -58,9 +58,9 @@ export default function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>E-Mail</FormLabel>
+              <FormLabel className="text-white">E-Mail</FormLabel>
               <FormControl>
-                <Input type="email" {...field} />
+                <Input className="text-white" type="email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -71,16 +71,16 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Mesajınız</FormLabel>
+              <FormLabel className="text-white">Mesajınız</FormLabel>
               <FormControl>
-                <Textarea {...field} />
+                <Textarea className="text-white" {...field} />
               </FormControl>
-                <FormDescription>Mesaj bölümünü sağ alttan büyütebilirsiniz.</FormDescription>
+                <FormDescription className="text-white">Mesaj bölümünü sağ alttan büyütebilirsiniz.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit" className="flex px-36 mx-auto">Gönder</Button>
+        <Button type="submit" className="flex px-36 w-50 mx-auto bg-white text-black hover:bg-orange-400">Gönder</Button>
       </form>
     </Form>
   );

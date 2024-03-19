@@ -40,7 +40,7 @@ export default function SelectForm() {
     toast({
       title: "Başarılı ✔️ En kısa sürede size ulaşacağız ⏰" ,
       description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-700 p-4">
+        <pre className="mt-2 w-[340px] rounded-md bg-black p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
@@ -49,7 +49,7 @@ export default function SelectForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-6 md:flex-row md:items-end md:space-x-4 md:space-y-0 bg-black/75 border-2 xl:mt-40 border-gray-600 drop-shadow-2xl py-5 px-12  rounded-md">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-6 md:flex-row md:items-end md:space-x-4 md:space-y-0 bg-black/75  xl:mt-40 rounded-xl p-6 border shadow-[0_8px_16px_rgb(0_0_0/0.4)]  border-black/[0] shadow-black  rounded-md ">
         <FormField
           control={form.control}
           name="hizmet"

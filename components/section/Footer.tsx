@@ -8,17 +8,17 @@ export default function Footer() {
     ];
   
     return (
-      <footer className="bg-gray-100">
+      <footer className="bg-black">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center">
-            <p className="text-black text-3xl font-extrabold tracking-[-.15rem]">codechef.</p>
+            <p className="text-gray-100 text-3xl font-extrabold tracking-[-.15rem]">codechef.</p>
           </div>
   
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
   {footerLinks.map((link, index) => (
     <li key={index}>
       <a
-        className="text-gray-700 transition duration-300 ease-in-out border-b-4 border-transparent hover:border-gray-700 hover:text-gray-700/75"
+        className="text-gray-100 transition duration-300 ease-in-out border-b-4 border-transparent hover:border-gray-100 "
         href={link.url}
       >
         {link.title}
@@ -35,7 +35,7 @@ export default function Footer() {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-100 duration-500 transition hover:text-orange-400"
             >
               <span className="sr-only">Facebook</span>
               <svg
@@ -55,10 +55,10 @@ export default function Footer() {
 
           <li>
             <a
-              href="#"
+              href="https://www.instagram.com/codechef.tr/"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-100 duration-500 transition hover:text-orange-400"
             >
               <span className="sr-only">Instagram</span>
               <svg
@@ -81,7 +81,7 @@ export default function Footer() {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-100 duration-500 transition hover:text-orange-400"
             >
               <span className="sr-only">Twitter</span>
               <svg
@@ -100,7 +100,7 @@ export default function Footer() {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-100 duration-500 transition hover:text-orange-400"
             >
               <span className="sr-only">GitHub</span>
               <svg
@@ -123,7 +123,7 @@ export default function Footer() {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-100 duration-500 transition hover:text-orange-400"
             >
               <span className="sr-only">Dribbble</span>
               <svg
@@ -143,7 +143,7 @@ export default function Footer() {
         </ul>
 
         <div className="flex justify-center">
-            <p className="text-black text-xs font-light tracking-widest pt-3">&copy; 2024</p>
+            <p className="text-gray-100 text-xs font-light tracking-widest pt-3">&copy; 2024</p>
           </div>
         </div>
       </footer>

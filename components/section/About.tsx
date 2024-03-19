@@ -9,120 +9,115 @@ export default function AboutSection() {
   return (
     <>
     <MobileMenu/>
-    <TracingBeam className="px-6">
+    <TracingBeam className="px-6 bg-black bg-opacity-80 border shadow-[0_0px_100px_rgb(0_0_0/1)]  border-black/[0] shadow-black  rounded-md">
         
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative text-white">
+      <div className="max-w-2xl mx-auto antialiased pt-4 relative text-white ">
     <section key="1" className="w-full py-12 md:py-24 ">
       <div className="container px-1 md:px-2">
         <div className="grid gap-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl text-white">
+              <h2 className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl text-orange-400">
                 Biz Kimiz ?<br/> Neden Kendimize Güveniyoruz ?
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Our mission is to empower teams to build the best digital experiences. We envision a world where every
-                idea can be realized, every team can innovate, and every business can thrive. Our values guide
-                everything we do: customer focus, innovation, collaboration, inclusion, and integrity.
+              <p className="max-w-[600px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              CodeChef, yazılım geliştirme alanında yenilikçi çözümler sunan bir yazılım firmasıdır. Müşterilerimize 
+              en üst düzeyde hizmet sağlamak için tutkuyla çalışıyoruz. Deneyimli bir ekip tarafından yönetilen CodeChef
+               her projeye özgün ve etkileyici bir yaklaşım getiriyor. Öyleyse işin mutfağına hoş geldiniz!
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold tracking-tight">Web Tasarım & Kodlama</h3>
-              <p className="max-w-prose text-gray-500/60 md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                Our platform provides a comprehensive suite of tools to enable rapid development and seamless
-                collaboration. Features include:
+              <h3 className="text-2xl font-bold tracking-tight text-orange-400">Web Tasarım & Kodlama</h3>
+              <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
+              CodeChef olarak, her satır kod bir tarif  ve her algoritma  lezzetli bir yemeğin bileşenleri gibidir. Sloganımızı yansıtan bir yaklaşımla, her bir projede özgün çözümler sunarak, yazılım dünyasında farkımızı ortaya koyuyoruz. Yenilikçi fikirlerimizle, kodlama mutfağında ustalaşıyor ve müşterilerimize lezzetli yazılım deneyimleri sunuyoruz. 
               </p>
               <ul className="grid gap-2 py-2">
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Instant previews for every push
+                  Tamamen Kişiselleştirilmiş Görseller ve Tema
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Built-in testing and test coverage analysis
+                  En Hızlı Alt Yapı Seçenekleri ve Teknojileri
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Automated CI/CD with native integration
+                  Müşteriye Özel Yazılım Çözümleri
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Performance and accessibility insights
+                  Seo Hizmetleri
                 </li>
               </ul>
             </div>
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold tracking-tight">Sosyal Medya İçerik Üretimi & Hesap Yönetimi</h3>
-              <p className="max-w-prose text-gray-500/60 md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                Customers choose our platform for its ease of use, powerful features, and seamless workflow integration.
-                The advantages of using our platform include:
-              </p>
+              <h3 className="text-2xl font-bold tracking-tight text-orange-400">Sosyal Medya İçerik Üretimi & Hesap Yönetimi</h3>
+              <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
+              Sosyal medya hesaplarınız için profesyonel bir dokunuşa mı ihtiyacınız var? Her bütçeye uygun fotoğraf çekimi paketlerimiz, profesyonel tasarımlar ve çok daha fazlası sizi CodeChef'te bekliyor.              </p>
               <ul className="grid gap-2 py-2">
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Streamlined development process
+                  Fotoğraf Çekimi
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Improved team collaboration and communication
+                  Özel Font ve Renk Paletleri
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Faster time to market for digital experiences
+                  Yenilikçi Tasarımlar
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Actionable insights for continuous improvement
+                  Düzenli İçerik Üretimi
                 </li>
               </ul>
             </div>
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold tracking-tight">Arama Motoru Optimizasyonu</h3>
-              <p className="max-w-prose text-gray-500/60 md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                Our platform provides a comprehensive suite of tools to enable rapid development and seamless
-                collaboration. Features include:
-              </p>
+              <h3 className="text-2xl font-bold tracking-tight text-orange-400">Reklam Hesabı Yönetimi</h3>
+              <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
+              CodeChef ekibi olarak yaptığımız işe dört kolla sarılıyoruz. Bir işletmeyi başarıya ulaştırmanın yolunun, o işi benimsemekten geçtiğine inanıyoruz.
+               Markanızın reklam hesaplarını profesyonelce yönetmek ve en etkili sonuçları elde etmek için elimizden geleni ardımıza koymuyoruz.     </p>
               <ul className="grid gap-2 py-2">
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Instant previews for every push
+                  Düzenli İstatistik Raporları
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Built-in testing and test coverage analysis
+                  Yenilikçi Reklam Kreatifleri
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Automated CI/CD with native integration
+                  Müşteri Analizi 
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Performance and accessibility insights
+                  Detaylı Demografik Yapı 
                 </li>
               </ul>
             </div>
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold tracking-tight">Reklam Hesabı Yönetimi</h3>
-              <p className="max-w-prose text-gray-500/60 md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                Customers choose our platform for its ease of use, powerful features, and seamless workflow integration.
-                The advantages of using our platform include:
+              <h3 className="text-2xl font-bold tracking-tight text-orange-400">Arama Motoru Optimizasyonu</h3>
+              <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
+              Web sitenizin görünürlüğünü artırmak ve hedef kitlenizi çekmek için mutfağımızdan çıkan arama motoru optimizasyonu hizmetlerimizle tanışın.
               </p>
               <ul className="grid gap-2 py-2">
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Streamlined development process
+                  Görsel Optimizasyon ve Etiketleme
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Improved team collaboration and communication
+                  Meta ve Başlık Etiketlerinin Optimize Edilmesi
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Faster time to market for digital experiences
+                  İç ve Dış Bağlantı Stratejileri
                 </li>
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  Actionable insights for continuous improvement
+                  SEO Dostu URL Yapısı Oluşturma
                 </li>
               </ul>
             </div>
