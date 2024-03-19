@@ -67,7 +67,7 @@ export default function AboutSection() {
                       Sosyal medya hesaplarınız için profesyonel bir dokunuşa mı
                       ihtiyacınız var? Her bütçeye uygun fotoğraf çekimi
                       paketlerimiz, profesyonel tasarımlar ve çok daha fazlası
-                      sizi CodeChef'te bekliyor.
+                      sizi CodeChef&apos;te bekliyor.
                     </p>
                     <ul className="grid gap-2 py-2">
                       <li>
