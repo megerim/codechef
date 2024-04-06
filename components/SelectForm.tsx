@@ -49,7 +49,7 @@ export default function SelectForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-6 md:flex-row md:items-end md:space-x-4 md:space-y-0 bg-black/75  xl:mt-40 rounded-xl p-6 border shadow-[0_8px_16px_rgb(0_0_0/0.4)]  border-black/[0] shadow-black  rounded-md ">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-6 md:flex-row md:items-end md:space-x-4 md:space-y-0 bg-black/75 p-6 border shadow-[0_8px_16px_rgb(0_0_0/0.4)]  border-black/[0] shadow-black  rounded-md ">
         <FormField
           control={form.control}
           name="hizmet"

@@ -14,13 +14,13 @@ const caveat = Caveat({ subsets: ["latin"] });
       <>
       <div className=" flex flex-col items-center justify-center bg-no-repeat  bg-cover  bg-center bg-[url('/img/bg7.jpg')]  " >
         {/* First Row: Card - Text */}
-        <div className=' flex flex-col md:flex-row items-center justify-center gap-1 mb-12 bg-black bg-opacity-50  mt-[10rem]' >
+        <div className=' flex flex-col md:flex-row items-center justify-center gap-1 bg-black bg-opacity-50  mt-[10rem]' >
           
           <div className='md:basis-1/2 w-full '>
             <ThreeDCardDemo />
           </div>
           <div className='md:basis-1/2 w-full text-end md:text-end md:pr-5 mr-12 p-6 '>
-            <h1 className={`text-orange-400 py-4 bg-clip-text text-5xl font-bold tracking-tight text-orange-400 md:text-7xl md:pr-2  ${caveat.className}`}>Farklı</h1>
+            <h1 className={`text-orange-400 py-4 bg-clip-text text-5xl font-bold tracking-tight md:text-7xl md:pr-2  ${caveat.className}`}>Farklı</h1>
             <p className='text-white font-light '>
             Web tasarım konusunda uzman ekibimizle, her projeye özel ve yenilikçi çözümler sunuyoruz. Markanızın özgünlüğünü ve farkını vurgulamak için buradayız. Kullanıcı dostu arayüzler, custom görseller ve çok daha fazlası için şimdi iletişime geçin
             </p>

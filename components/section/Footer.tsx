@@ -56,7 +56,7 @@ export default function Footer() {
           <li>
             <a
               href="https://www.instagram.com/codechef.tr/"
-              rel="noreferrer"
+              rel="noopener"
               target="_blank"
               className="text-gray-100 duration-500 transition hover:text-orange-400"
             >
@@ -97,8 +97,8 @@ export default function Footer() {
 
           <li>
             <a
-              href="#"
-              rel="noreferrer"
+              href="https://github.com/CodeChefTR"
+              rel="noopener"
               target="_blank"
               className="text-gray-100 duration-500 transition hover:text-orange-400"
             >

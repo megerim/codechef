@@ -18,7 +18,7 @@ export default function Iletisim() {
     <>
       <Drawer>
         <DrawerTrigger className="py-8 px-12 bg-orange-400 rounded-sm hover:text-white hover:bg-opacity-0 transition duration-300 border shadow-[32px_32px_16px_rgb(0_0_0/1)]  border-black/[0] shadow-black">
-          <p id="contact" className="font-bold text-xl">İletişim İçin Tıklayınız</p>
+          <p id="contact" className="relative text-xl font-bold w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">İletişim İçin Tıklayınız</p>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
