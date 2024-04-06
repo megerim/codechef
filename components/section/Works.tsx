@@ -4,7 +4,7 @@ import MobileMenu from '@/components/MobileMenu';
 
 export default function WorksSection() {
     return (
-      <div className="w-full py-24 bg-cover bg-cover bg-center bg-[url('/img/bg11.jpg')] text-white">
+      <div className="w-full py-24 bg-cover bg-center bg-[url('/img/bg11.jpg')] text-white">
         <section className="w-full py-5">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
@@ -19,7 +19,7 @@ export default function WorksSection() {
           <div className="container grid items-center gap-4 px-4 text-center md:px-0 lg:gap-10">
             <div className="grid w-full grid-cols-1 items-stretch justify-center md:grid-cols-2 lg:grid-cols-3 gap-4 ">
               <div className="flex flex-col items-center justify-center p-4 sm:p-8  ">
-                <div className="aspect-video overflow-hidden rounded-xl w-full max-w-sm  rounded-lg shadow-2xl">
+                <div className="aspect-video overflow-hidden w-full max-w-sm  rounded-lg shadow-2xl">
                   <Image
                     alt="Project"
                     className="rounded-lg object-cover object-center  "
@@ -36,7 +36,7 @@ export default function WorksSection() {
                 <p className="text-base text-orange-400 dark:text-gray-400">İşletme</p>
               </div>
               <div className="flex flex-col items-center justify-center p-4 sm:p-8  ">
-                <div className="aspect-video overflow-hidden rounded-xl w-full max-w-sm  rounded-lg shadow-2xl">
+                <div className="aspect-video overflow-hidden w-full max-w-sm  rounded-lg shadow-2xl">
                   <Image
                     alt="Project"
                     className="rounded-lg object-cover object-center"
@@ -53,7 +53,7 @@ export default function WorksSection() {
                 <p className="text-base text-orange-400 dark:text-gray-400">Kişisel Portfolyo</p>
               </div>
               <div className="flex flex-col items-center justify-center p-4 sm:p-8 ">
-                <div className="aspect-video overflow-hidden rounded-xl w-full max-w-sm rounded-lg shadow-2xl">
+                <div className="aspect-video overflow-hidden w-full max-w-sm rounded-lg shadow-2xl">
                   <Image
                     alt="Project"
                     className="rounded-lg object-cover object-center"
@@ -98,7 +98,7 @@ export default function WorksSection() {
                   width="600"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl rounded-lg shadow-2xl">
+              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl">
                 <Image
                   alt="Image"
                   className="object-cover object-center"
@@ -111,7 +111,7 @@ export default function WorksSection() {
                   width="600"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl rounded-lg shadow-2xl">
+              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl">
                 <Image
                   alt="Image"
                   className="object-cover object-center"
@@ -124,7 +124,7 @@ export default function WorksSection() {
                   width="600"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl rounded-lg shadow-2xl">
+              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl">
                 <Image
                   alt="Image"
                   className="object-cover object-center"

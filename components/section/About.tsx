@@ -1,156 +1,210 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { TracingBeam } from "../ui/tracing-beam";
 
+import { motion } from "framer-motion";
+
 import MobileMenu from "@/components/MobileMenu";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 export default function AboutSection() {
   return (
     <>
       <MobileMenu />
       <TracingBeam className="px-6 bg-black bg-opacity-80 border shadow-[0_0px_100px_rgb(0_0_0/1)]  border-black/[0] shadow-black  rounded-md">
-        <div className="max-w-2xl mx-auto antialiased pt-4 relative text-white ">
+        <div className="max-w-3xl mx-auto antialiased pt-4 relative text-white ">
           <section key="1" className="w-full py-12 md:py-24 ">
             <div className="container px-1 md:px-2">
-              <div className="grid gap-6">
+              <motion.div
+                className="container grid gap-6"
+                variants={container}
+                initial="hidden"
+                animate="visible"
+              >
                 <div className="flex flex-col justify-center space-y-4">
-                  <div className="space-y-2">
-                    <h2 className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl text-orange-400">
-                      Biz Kimiz ?<br /> Neden Kendimize Güveniyoruz ?
-                    </h2>
-                    <p className="max-w-[600px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                      CodeChef, yazılım geliştirme alanında yenilikçi çözümler
-                      sunan bir yazılım firmasıdır. Müşterilerimize en üst
-                      düzeyde hizmet sağlamak için tutkuyla çalışıyoruz.
-                      Deneyimli bir ekip tarafından yönetilen CodeChef her
-                      projeye özgün ve etkileyici bir yaklaşım getiriyor.
-                      Öyleyse işin mutfağına hoş geldiniz!
-                    </p>
+                  <div
+                    className="space-y-2"
+                  >
+                    <motion.h2 
+                    variants={item} className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl text-orange-400">
+                      Biz Kimiz ?<br /> Nasıl Düşünüyoruz ?
+                    </motion.h2>
+                    <motion.p 
+                    variants={item} className=" text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                      &nbsp; &nbsp; Biz genç ve dinamik bir ekibiz. Detaylara
+                      önem veren, yaptığı ve yapabileceği konularda şeffaf ve
+                      net olan bir iş anlayışımız var. Sadeliği, modernliği ve
+                      öne çıkmayı seven tasarım anlayışımız ile sizinle aynı
+                      noktada buluşabileceğimize eminiz.
+                    </motion.p>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-bold tracking-tight text-orange-400">
+                  <div
+                    
+                    className="space-y-2"
+                  >
+                    <motion.h3 variants={item} className="text-2xl font-bold tracking-tight text-orange-400">
                       Web Tasarım & Kodlama
-                    </h3>
-                    <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                      CodeChef olarak, her satır kod bir tarif ve her algoritma
-                      lezzetli bir yemeğin bileşenleri gibidir. Sloganımızı
-                      yansıtan bir yaklaşımla, her bir projede özgün çözümler
-                      sunarak, yazılım dünyasında farkımızı ortaya koyuyoruz.
-                      Yenilikçi fikirlerimizle, kodlama mutfağında ustalaşıyor
-                      ve müşterilerimize lezzetli yazılım deneyimleri sunuyoruz.
-                    </p>
-                    <ul className="grid gap-2 py-2">
-                      <li>
+                    </motion.h3>
+                    <motion.p 
+                    variants={item} className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
+                      &nbsp; &nbsp;Yenilikçi tasarım ve efektif kodlama
+                      temellerini bir araya getirerek, güvenli ve hızlı bir web
+                      site / web uygulamasını markanızın kimliğini yansıtacak
+                      şekilde ortaya koyabiliriz.
+                    </motion.p >
+                    <motion.ul className="grid gap-2 py-2">
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Tamamen Kişiselleştirilmiş Görseller ve Tema
-                      </li>
-                      <li>
+                        Tamamen Kişiselleştirilmiş Arayüz ve Tema
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        En Hızlı Alt Yapı Seçenekleri ve Teknojileri
-                      </li>
-                      <li>
+                        Hızlı ve Güvenli Altyapı
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Müşteriye Özel Yazılım Çözümleri
-                      </li>
-                      <li>
+                        Özel Geliştirilmiş İşlevsellikler
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Seo Hizmetleri
-                      </li>
-                    </ul>
+                        Arama Motorlarına Tam Optimizasyon
+                      </motion.li>
+                    </motion.ul>
                   </div>
-                  <div className="space-y-2">
+                  <motion.div
+                    variants={item}
+                    className="space-y-2"
+                  >
                     <h3 className="text-2xl font-bold tracking-tight text-orange-400">
                       Sosyal Medya İçerik Üretimi & Hesap Yönetimi
                     </h3>
                     <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                      Sosyal medya hesaplarınız için profesyonel bir dokunuşa mı
-                      ihtiyacınız var? Her bütçeye uygun fotoğraf çekimi
-                      paketlerimiz, profesyonel tasarımlar ve çok daha fazlası
-                      sizi CodeChef&apos;te bekliyor.
+                      Başarınıza giden yolda sosyal medya görüntünüzü daha güçlü
+                      hale getirelim. Sizin markanızın da kendisiyle bütünleşmiş
+                      bir tasarım kimliği oluşsun.
                     </p>
-                    <ul className="grid gap-2 py-2">
-                      <li>
+                    <motion.ul 
+                    variants={item} className="grid gap-2 py-2">
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Fotoğraf Çekimi
-                      </li>
-                      <li>
+                        Fotoğraf & Drone Çekimi
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Özel Font ve Renk Paletleri
-                      </li>
-                      <li>
+                        Kullanıcı Sayısı ve Etkileşim Analizi
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Yenilikçi Tasarımlar
-                      </li>
-                      <li>
+                        Yenilikçi ve Uyumlu Tasarım
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Düzenli İçerik Üretimi
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
+                        Düzenli İçerik Üretimi ve Yönetimi
+                      </motion.li>
+                    </motion.ul>
+                  </motion.div>
+                  <motion.div
+                    variants={item}
+                    className="space-y-2"
+                  >
                     <h3 className="text-2xl font-bold tracking-tight text-orange-400">
                       Reklam Hesabı Yönetimi
                     </h3>
                     <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                      CodeChef ekibi olarak yaptığımız işe dört kolla
-                      sarılıyoruz. Bir işletmeyi başarıya ulaştırmanın yolunun,
-                      o işi benimsemekten geçtiğine inanıyoruz. Markanızın
-                      reklam hesaplarını profesyonelce yönetmek ve en etkili
-                      sonuçları elde etmek için elimizden geleni ardımıza
-                      koymuyoruz.{" "}
+                      Bilinirliğinizi arttırmak bir süreç gerektirir. Bu süreçte
+                      gerekli istatistik analizleri ile daha doğru ve etkili
+                      reklam kampanyaları yürütebiliriz.
                     </p>
-                    <ul className="grid gap-2 py-2">
-                      <li>
+                    <motion.ul className="grid gap-2 py-2">
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
                         Düzenli İstatistik Raporları
-                      </li>
-                      <li>
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
                         Yenilikçi Reklam Kreatifleri
-                      </li>
-                      <li>
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Müşteri Analizi
-                      </li>
-                      <li>
+                        Kullanıcı Davranış Analizi
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Detaylı Demografik Yapı
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
+                        Detaylı Hedef Kitle Analizi
+                      </motion.li>
+                    </motion.ul>
+                  </motion.div>
+                  <motion.div
+                    variants={item}
+                    className="space-y-2"
+                  >
                     <h3 className="text-2xl font-bold tracking-tight text-orange-400">
                       Arama Motoru Optimizasyonu
                     </h3>
                     <p className="max-w-prose text-white md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400/60">
-                      Web sitenizin görünürlüğünü artırmak ve hedef kitlenizi
-                      çekmek için mutfağımızdan çıkan arama motoru optimizasyonu
-                      hizmetlerimizle tanışın.
+                      Websiteniz eğer bizim tarafımızdan yapıldıysa arama
+                      motorlarına optimize haldedir. Ancak Google&apos;da daha
+                      üst sıralarda yer almak istiyorsanız websitenizin içeriği
+                      buna göre düzenlenmelidir.
                     </p>
-                    <ul className="grid gap-2 py-2">
-                      <li>
+                    <motion.ul className="grid gap-2 py-2">
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        Görsel Optimizasyon ve Etiketleme
-                      </li>
-                      <li>
+                        Doğru Anahtar Kelime Kullanımı
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
                         Meta ve Başlık Etiketlerinin Optimize Edilmesi
-                      </li>
-                      <li>
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        İç ve Dış Bağlantı Stratejileri
-                      </li>
-                      <li>
+                        Anlamsal (Semantic) HTML Elementleri
+                      </motion.li>
+                      <motion.li 
+                    variants={item}>
                         <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                        SEO Dostu URL Yapısı Oluşturma
-                      </li>
-                    </ul>
-                  </div>
+                        Doğru Link Yönetimi
+                      </motion.li>
+                    </motion.ul>
+                  </motion.div>
                 </div>
 
                 <div className="flex flex-col justify-center space-y-4" />
-              </div>
+              </motion.div>
             </div>
           </section>
         </div>
