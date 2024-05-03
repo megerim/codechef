@@ -25,7 +25,7 @@ const cinzeld = Cinzel_Decorative({
           </div>
           <div className='md:basis-1/2 w-full text-end md:text-end md:pr-5 mr-12 p-6'>
             <h1 className={`text-orange-400 py-4 bg-clip-text text-5xl font-bold tracking-tight md:text-7xl md:pr-12  ${cinzeld.className}`}>FARkLI</h1>
-            <p className='text-white font-semibold text-lg' >Markanızın farkını yansıtan, web / görsel / video tasarımları.</p>
+            <p className='text-white font-light text-base' >Markanızın farkını yansıtan, web / görsel / video tasarımları.</p>
             
           </div>
         </div>
@@ -37,7 +37,7 @@ const cinzeld = Cinzel_Decorative({
           </div>
           <div className='md:basis-1/2 w-full text-start md:text-start md:pr-5 ml-12 p-6'>
             <h1 className={`text-orange-400 py-4 bg-clip-text text-5xl font-bold tracking-tight md:text-7xl md:pr-12  ${oxanium.className}`}>GÜVENLİ</h1>
-            <p className='text-white font-semibold text-lg' >Kendini tekrar etmeyen, temiz , hızlı , güvenli ve tam web hizmetleri.</p>
+            <p className='text-white font-semibold text-base' >Kendini tekrar etmeyen, temiz , hızlı , güvenli ve tam web hizmetleri.</p>
             
           </div>
         </div>

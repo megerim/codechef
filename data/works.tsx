@@ -1,14 +1,14 @@
 export const works = [
     {
       id: 0,
-      src: "https://images.unsplash.com/photo-1526731530795-375e081e6154?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1300&q=80",
+      src: "https://barkinali.com/6419e69399a9b63892400fac/Kor1.webp",
       placeholder:
         "https://images.unsplash.com/photo-1526731530795-375e081e6154?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=45&h=63&q=80",
-      title: "Summer is here at last.",
-      link: "https://unsplash.com/photos/aBJBMYwzEd8",
-      author: "Photo by Paul Rysz",
-      location: "Aberdeen, United Kingdom",
-      date: "Published on May 19, 2018",
+      title: "Kor Makine",
+      link: "https://www.kormakine.com",
+      author: "Kor Makine",
+      location: "Kor Makine",
+      date: "2023",
       width: "1300",
       height: "1980",
       slug: "zero",

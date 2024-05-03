@@ -19,8 +19,8 @@ interface Work {
 export default function Home() {
   return (
       <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        <div className="bg-gradient-to-tr from-purple-600 to-indigo-600 p-8 flex rounded-2xl items-center">
-          <h1 className="font-extrabold text-3xl xl:text-5xl text-indigo-200 leading-tight text-center align-top justify-start top-0 flex">
+        <div className="bg-gradient-to-br from-black via-green-600 to-orange-500 p-8 flex rounded-2xl items-center">
+          <h1 className="font-extrabold text-3xl xl:text-5xl text-slate-200 leading-tight text-center align-top justify-start top-0 flex">
             WEB PROJELERİ
           </h1>
         </div>
