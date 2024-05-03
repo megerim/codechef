@@ -1,148 +1,46 @@
+import Link from "next/link";
+import { works } from "@/data/works";
 import Image from "next/image";
 
-import MobileMenu from '@/components/MobileMenu';
+interface Work {
+  id: number;
+  src: string;
+  placeholder: string;
+  title: string;
+  link: string;
+  author: string;
+  location: string;
+  date: string;
+  width: string;
+  height: string;
+  slug: string;
+}
 
-export default function WorksSection() {
-    return (
-      <div className="w-full py-24 bg-cover bg-center bg-[url('/img/bg11.jpg')] text-white">
-        <section className="w-full py-5">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Website Projelerimiz</h2>
-              <p className="mx-auto max-w-[900px] text-orange-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-               Projelerimizden bazılarına göz atın! 
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-5">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-0 lg:gap-10">
-            <div className="grid w-full grid-cols-1 items-stretch justify-center md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-              <div className="flex flex-col items-center justify-center p-4 sm:p-8  ">
-                <div className="aspect-video overflow-hidden w-full max-w-sm  rounded-lg shadow-2xl">
-                  <Image
-                    alt="Project"
-                    className="rounded-lg object-cover object-center  "
-                    height="225"
-                    src="/project-3.png"
-                    style={{
-                      aspectRatio: "400/225",
-                      objectFit: "cover",
-                    }}
-                    width="400"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mt-4">Kor Makine</h3>
-                <p className="text-base text-orange-400 dark:text-gray-400">İşletme</p>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 sm:p-8  ">
-                <div className="aspect-video overflow-hidden w-full max-w-sm  rounded-lg shadow-2xl">
-                  <Image
-                    alt="Project"
-                    className="rounded-lg object-cover object-center"
-                    height="225"
-                    src="/project-1.png"
-                    style={{
-                      aspectRatio: "400/225",
-                      objectFit: "cover",
-                    }}
-                    width="400"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mt-4">Barkinali</h3>
-                <p className="text-base text-orange-400 dark:text-gray-400">Kişisel Portfolyo</p>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 sm:p-8 ">
-                <div className="aspect-video overflow-hidden w-full max-w-sm rounded-lg shadow-2xl">
-                  <Image
-                    alt="Project"
-                    className="rounded-lg object-cover object-center"
-                    height="225"
-                    src="/project-2.png"
-                    style={{
-                      aspectRatio: "400/225",
-                      objectFit: "cover",
-                    }}
-                    width="400"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mt-4">Güllü Gıda</h3>
-                <p className="text-base text-orange-400 dark:text-gray-400">E-ticaret</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sosyal Medya Çalışmalarımız</h2>
-              <p className="mx-auto max-w-[700px] text-orange-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Sosyal medya içeriklerimizi keşfedin!
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="w-full ">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="grid w-full grid-cols-1 items-stretch justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-2xl">
-                <Image
-                  alt="Image"
-                  className="object-cover object-center"
-                  height="600"
-                  src="/Gin Tonic.jpg"
-                  style={{
-                    aspectRatio: "600/600",
-                    objectFit: "cover",
-                  }}
-                  width="600"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl">
-                <Image
-                  alt="Image"
-                  className="object-cover object-center"
-                  height="600"
-                  src="/Shoe.jpg"
-                  style={{
-                    aspectRatio: "600/600",
-                    objectFit: "cover",
-                  }}
-                  width="600"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl">
-                <Image
-                  alt="Image"
-                  className="object-cover object-center"
-                  height="600"
-                  src="/Smoothie-Frappe.jpg"
-                  style={{
-                    aspectRatio: "600/600",
-                    objectFit: "cover",
-                  }}
-                  width="600"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl">
-                <Image
-                  alt="Image"
-                  className="object-cover object-center"
-                  height="600"
-                  src="/Muub's Giyim MockUp.png"
-                  style={{
-                    aspectRatio: "600/600",
-                    objectFit: "cover",
-                  }}
-                  width="600"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <MobileMenu />
+export default function Home() {
+  return (
+      <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="bg-gradient-to-tr from-purple-600 to-indigo-600 p-8 flex rounded-2xl items-center">
+          <h1 className="font-extrabold text-3xl xl:text-5xl text-indigo-200 leading-tight text-center align-top justify-start top-0 flex">
+            WEB PROJELERİ
+          </h1>
+        </div>
+        {works.map((work: Work) => (
+          <Link href={`/works/${work.slug}`} scroll={false} key={work.id} className="overflow-hidden flex rounded-2xl shadow-xl hover:scale-105 hover:shadow-2xl hover:z-10 transition-all ease-in-out">
+              <Image
+                src={work.src}
+                alt={work.title}
+                placeholder="blur"
+                blurDataURL={work.placeholder}
+                width={parseInt(work.width)}
+                height={parseInt(work.height)}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                }}
+              />
+            </Link>
+        ))}
       </div>
-    )
-  }
-  
-  
+  );
+}
