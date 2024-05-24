@@ -6,7 +6,7 @@ export function Intro() {
 <section className="w-full h-screen bg-cover bg-center bg-[url('/img/bg3.1.jpg')]">
     <div className="container flex flex-col items-center justify-center gap-50 px-0 md:px- md:grid md:grid-cols-2 lg:gap-10">
       <div className="max-w-7xl relative mx-auto my-20 md:my-40 px-4 w-full  left-0 top-0 text-white">
-        <h1 className="text-3xl md:text-8xl lg:text-9xl font-extrabold tracking-[-.15rem] md:tracking-[-.8rem] bg-clip-text text-transparent bg-gradient-to-bl from-gray-100 to-gray-300 drop-shadow-2xl">
+        <h1 className="text-5xl md:text-8xl lg:text-8xl font-extrabold tracking-[-.15rem] md:tracking-[-.6rem] bg-clip-text text-transparent bg-gradient-to-bl from-gray-100 to-gray-300 drop-shadow-2xl">
           codechef.
         </h1>
 

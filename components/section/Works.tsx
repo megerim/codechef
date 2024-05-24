@@ -39,7 +39,11 @@ export default function Home() {
                   objectFit: "cover",
                 }}
               />
+              <span className="text-white">
+              {work.title}
+              </span>
             </Link>
+            
         ))}
       </div>
   );
