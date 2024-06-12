@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body className={`${montserrat.className} bg-black`}>{children} <Analytics/> <SpeedInsights/>  <Toaster /></body>
+      <body className={`${montserrat.className} bg-gradient-to-r from-black via-green-600 to-orange-500`}>{children} <Analytics/> <SpeedInsights/>  <Toaster /></body>
     </html>
   );
 }

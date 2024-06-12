@@ -1,6 +1,14 @@
+"use client";
 import Link from "next/link";
 import { works } from "@/data/works";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+
+import Autoplay from "embla-carousel-autoplay";
 
 interface Work {
   id: number;
@@ -18,33 +26,50 @@ interface Work {
 
 export default function Home() {
   return (
-      <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        <div className="bg-gradient-to-br from-black via-green-600 to-orange-500 p-8 flex rounded-2xl items-center">
-          <h1 className="font-extrabold text-3xl xl:text-5xl text-slate-200 leading-tight text-center align-top justify-start top-0 flex">
-            WEB PROJELERİ
-          </h1>
-        </div>
-        {works.map((work: Work) => (
-          <Link href={`/works/${work.slug}`} scroll={false} key={work.id} className="overflow-hidden flex rounded-2xl shadow-xl hover:scale-105 hover:shadow-2xl hover:z-10 transition-all ease-in-out">
-              <Image
-                src={work.src}
-                alt={work.title}
-                placeholder="blur"
-                blurDataURL={work.placeholder}
-                width={parseInt(work.width)}
-                height={parseInt(work.height)}
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                  objectFit: "cover",
-                }}
-              />
-              <span className="text-white">
-              {work.title}
-              </span>
-            </Link>
-            
-        ))}
-      </div>
+    
+
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+            slidesToScroll: 1, // Ensure it scrolls one slide at a time
+          }}
+          orientation="horizontal"
+          plugins={[
+            Autoplay({
+              delay: 3000, // Increased delay for a more relaxed feel
+              stopOnInteraction: false,
+            }),
+          ]}
+          className="my-12" // Adjusted height
+        >
+          <CarouselContent>
+            {works.map((work: Work) => (
+              <CarouselItem
+                key={work.id}
+                className="md:basis-1/2 lg:basis-1/3"
+              >
+                <Link
+                  href={`/works/${work.slug}`}
+                  scroll={false}
+                  className="group overflow-hidden rounded-2xl shadow-xl hover:scale-105 hover:shadow-2xl hover:z-10 transition-all duration-300 ease-in-out transform"
+                >
+                  <Image
+                    src={work.src}
+                    alt={work.title}
+                    placeholder="blur"
+                    blurDataURL={work.placeholder}
+                    width={800} 
+                    height={350}
+                    className="w-full h-full group-hover:scale-110 transition-transform duration-300 p-5"
+                  />
+                  <span className="text-white text-center text-xs absolute z-40 font-semibold">
+                    {work.title}
+                  </span>
+                </Link>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
   );
 }

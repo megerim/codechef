@@ -106,3 +106,23 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 33.333%;
+  padding: 10px;
+  box-sizing: border-box;
+}

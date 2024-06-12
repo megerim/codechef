@@ -1,12 +1,14 @@
 import MobileMenu from '@/components/MobileMenu';
 import Footer from '@/components/section/Footer';
-import WorksSection from '@/components/section/Works';
+import WorkSection from '@/components/section/WorkSection';
 export default function Works() {
     return (
         <>
+    <div className=" ">
         <MobileMenu />
-        <WorksSection />
+        <WorkSection />
         <Footer />
+        </div>
         </>
     );
   }
