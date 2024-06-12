@@ -41,7 +41,7 @@ export default function Home() {
               stopOnInteraction: false,
             }),
           ]}
-          className="my-12" // Adjusted height
+          className="my-12 mx-5" // Adjusted height
         >
           <CarouselContent>
             {works.map((work: Work) => (
