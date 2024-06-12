@@ -2,6 +2,7 @@
 import Iletisim from "@/components/Iletisim";
 import { FeaturesTitle } from "@/components/Features";
 import Process from "@/components/Process";
+import { DrawerDialogDemo } from "../Draw";
 
 
 
@@ -18,7 +19,7 @@ export default function Cards() {
 
 
         <div className="relative m-4 p-8">
-          <Iletisim />
+          <DrawerDialogDemo />
         </div>
       </div>
     </>
